@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+html, body, p {
+	margin: 0;
+	padding: 0;
+    font-family: 'Lato', 'sans-serif' !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.calendar-wrapper .mat-form-field-appearance-legacy .mat-form-field-underline,
+.calendar-wrapper .mat-form-field-appearance-legacy .mat-form-field-ripple {
+    height: 0px !important;
+}
+
+.calendar-wrapper .mat-form-field {
+	width: 155px;
+}
+
+.calendar-wrapper .mat-form-field-appearance-legacy .mat-form-field-prefix .mat-datepicker-toggle-default-icon, 
+.calendar-wrapper .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-datepicker-toggle-default-icon {
+	width: 0;
+}
+
+
+.calendar-wrapper .mat-form-field-appearance-legacy .mat-form-field-prefix .mat-icon-button, 
+.calendar-wrapper .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon-button {
+	height: 18px;
+    width: 10px;
+    background: url(/assets/images/calendar-icon.png) no-repeat;
+    vertical-align: middle;
+}

@@ -1,0 +1,43 @@
+<div class="calendar-strip">
+	<mat-form-field>
+	  <!-- <mat-label>Verbose datepicker</mat-label> -->
+	  <input matInput [matDatepicker]="dp" [formControl]="date">
+	  <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+	  <mat-datepicker #dp></mat-datepicker>
+	</mat-form-field>
+
+	<ul class="view-types-wrapper">
+		<li *ngFor="let viewType of calendarViewTypes; let i = index"
+		[ngClass]="[ i == selectedViewTypeIndex ? 'selected-view-type' : '']"
+		(click)="selectedViewTypeIndex = i"><span>{{viewType.title}}</span></li>
+	</ul>
+
+	<button class="plus-btn"></button>
+</div>
+
+<div class="calendar-view">
+	<div class="virtical-lines-wrapper">
+		<div *ngFor="let dummy of ' '.repeat((totalDays/2)+1).split(''), let x = index" class="day-line-wrapper">
+			<div class="day-line"></div>
+			<p class="day-text" *ngIf="x !== 15">{{ x == 0 ? 1 : x+x+1}}<span *ngIf="x==0">st</span><span *ngIf="x!==0">th</span></p>
+		</div>
+	</div>
+
+	<div class="teams-on-calendar">
+		<div *ngFor="let team of teams" class="team-timeline">
+			<span class="timeline-team-title">{{team.title}}</span>
+			<span *ngFor="let timeline of team.timelines; let j = index"
+			[ngClass]="[calculateDayPatchWidth(team) ? 'team-timeline-patch' : '', team.theme]"
+			[ngStyle]="{'left': timeline.startPoint, 'width': timeline.patchWidth}">
+				About {{timeline.days}} days. <span class="additionalNote">{{timeline.additionalNote}}</span>
+				<span class="timeline-team-icons" [ngClass]="[team.theme , j == 0 ? 'first' : 'second']"></span>
+			</span>
+			<span *ngFor="let gap of team.gaps"
+			[ngClass]="[calculateGapPatchWidth(team) ? 'team-gap-patch' : '', team.theme]"
+			[ngStyle]="{'left': gap.startPoint, 'width': gap.patchWidth}">
+				<span class="gap-note">{{gap.additionalNote}}</span>
+			</span>
+		</div>
+	</div>
+</div>
+

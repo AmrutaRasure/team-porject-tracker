@@ -1,0 +1,11 @@
+<p class="top-rank-employee">{{topPerformer}} was the number one on the day</p>
+<div class="shadow-box"></div>
+
+<p class="main-menu-heading">Menu</p>
+
+<ul>
+	<li *ngFor="let menu of menuItems" [routerLink]="menu.link" class="menu-item"  
+	[ngClass]="[isCurrentMenuSelected(menu.link) ? 'selected-menu' : '', menu.icon]">
+		{{menu.title}}
+	</li>
+</ul>

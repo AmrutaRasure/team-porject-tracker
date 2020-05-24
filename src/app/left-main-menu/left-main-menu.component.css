@@ -1,0 +1,92 @@
+.top-rank-employee {
+	font-size: 8px;
+    margin: 30px 0 0;
+    color: #fff;
+    padding: 15px 5px;
+    background: #2F68FA;
+    font-weight: 600;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.top-rank-employee:before {
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	content: "";
+	background: #FFED40;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.shadow-box {
+	-webkit-box-shadow: 0px 5px 8px -4px black;
+	-moz-box-shadow: 0px 5px 8px -4px black;
+	box-shadow: 0px 5px 8px -4px black;
+    height: 9px;
+    margin: -10px -20px 40px;
+}
+
+ul {
+	margin: 30px -20px;
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #EFEFEF
+}
+
+.main-menu-heading {
+	font-weight: 600;
+}
+
+.main-menu-heading:before {
+	content: url('/assets/images/menu-icon.png');
+	vertical-align: middle;
+    padding-right: 10px;
+}
+
+.menu-item {
+	padding: 15px;
+	color: #9A9A9A;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.selected-menu {
+	border-left: 5px solid #2F68FA;
+	background-image: linear-gradient(to right, #E6F0FB , #fff);
+    color: #2F68FA;
+    font-weight: 600;
+}
+
+.home-menu:before {
+	content: url('/assets/images/home-icon.png');
+    height: 30px;
+    width: 29px;
+    vertical-align: middle;
+    padding: 0 20px 0 5px;
+}
+
+.team-data-menu:before {
+	content: url('/assets/images/team-data-icon.png');
+    height: 30px;
+    width: 29px;
+    vertical-align: middle;
+    padding: 0 20px 0 5px;
+}
+
+.team-project-menu:before {
+	content: url('/assets/images/team-project-icon.png');
+    height: 30px;
+    width: 29px;
+    vertical-align: middle;
+    padding: 0 20px 0 5px;
+}
+
+.team-collect-menu:before {
+	content: url('/assets/images/team-collect-icon.png');
+    height: 30px;
+    width: 31px;
+    vertical-align: middle;
+    padding: 0 20px 0 5px;
+}

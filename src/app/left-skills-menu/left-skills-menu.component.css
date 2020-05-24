@@ -1,0 +1,40 @@
+.skills-menu-heading {
+	font-weight: 600;
+}
+
+.skills-menu-heading:before {
+	content: url('/assets/images/skills-icon.png');
+	vertical-align: middle;
+    padding-right: 10px;
+}
+
+ul {
+	margin: 30px -20px;
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.skills-menu-item {
+	color: #9A9A9A;
+    font-weight: 600;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.skills-menu-item span {
+	cursor: pointer;
+}
+
+.skills-emp-count {
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    border: 1px solid #C4D4FD;
+    padding: 5px 10px;
+    top: 10px;
+    font-size: 13px;
+    color: #2F68FA;
+    font-weight: 400;
+}
+

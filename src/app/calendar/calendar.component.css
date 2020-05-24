@@ -1,0 +1,208 @@
+.calendar-strip {
+	border-bottom: 2px solid #EFEFEF;
+    padding: 0px 20px;
+    height: 60px;
+    position: relative;
+}
+
+.view-types-wrapper {
+	display: inline-flex;
+	list-style-type: none;
+	transform: translateX(25%);
+}
+
+.view-types-wrapper li {
+	padding: 0 10px;
+	color: #9A9A9A;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.view-types-wrapper li.selected-view-type span {
+	color: #000;
+	font-weight: 600;
+	box-shadow: 0px 9px 5px -1px #D1DDFD;
+}
+
+.view-types-wrapper li:after {
+	height: 8px;
+    width: 1px;
+    background-color: #9A9A9A;
+    display: inline-block;
+    content: "";
+    margin-left: 10px;
+}
+
+.view-types-wrapper li:last-child:after {
+	background-color: transparent;
+}
+
+.plus-btn {
+	position: absolute;
+	right: 20px;
+	background: url('/assets/images/plus-icon.png') no-repeat;
+	height: 30px;
+	width: 30px;
+    border: none;
+    top: 20px;
+    cursor: pointer;
+}
+
+.calendar-view {
+	min-height: 500px;
+	position: relative;
+}
+
+.virtical-lines-wrapper {
+	height: 450px;
+    width: 85%;
+    display: flex;
+    position: absolute;
+    left: 15%;
+    padding: 30px 0;
+}
+
+.day-line-wrapper {
+	position: relative;
+    margin: 0 6% 0 0;
+}
+
+.day-line {
+    height: 90%;
+    width: 2px;
+    opacity: 0.2;
+    margin: 0;
+    background-color: #CDCDCD;
+}
+
+.day-text {
+	position: absolute;
+	bottom: 0;
+	color: #CDCDCD;
+	font-size: 11px;
+}
+
+.teams-on-calendar {
+	position: absolute;
+	height: 80%;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.team-timeline-patch {
+	display: inline-block;
+	position: absolute;
+    height: 20px;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    top: 20px;
+    z-index: 99;
+}
+
+.team-timeline {
+	padding: 30px 0;
+	position: relative;
+}
+
+.team-timeline-patch.red {
+	border: 1px solid #F25074;
+	border-left: 5px solid #F25074;
+	color: #F25074;
+	border-radius: 3px;
+	background: rgba(242, 80, 116, 0.2);
+}
+
+.team-timeline-patch.blue {
+	border: 1px solid #4667F6;
+	color: #4667F6;
+	border-left: 5px solid #4667F6;
+	border-radius: 3px;
+	background: rgba(70, 103, 246, 0.2);
+}
+
+.team-timeline-patch.orange {
+	border: 1px solid #F67629;
+	color: #F67629;
+	border-left: 5px solid #F67629;
+	border-radius: 3px;
+	background: rgba(246, 118, 41, 0.2);
+}
+
+.team-timeline-patch.green {
+	border: 1px solid #55B231;
+	color: #55B231;
+	border-left: 5px solid #55B231;
+	border-radius: 3px;
+	background: rgba(85, 178, 49, 0.2);
+}
+
+.team-timeline-patch.skyblue {
+	border: 1px solid #02ACFB;
+	color: #02ACFB;
+	border-left: 5px solid #02ACFB;
+	border-radius: 3px;
+	background: rgba(2, 172, 251, 0.2);
+}
+
+
+span.timeline-team-icons {
+    position: absolute;
+    height: 30px;
+    right: 0;
+    top: 5px;
+}
+
+.timeline-team-icons.red {
+	content: url('/assets/images/red-team.png');
+}
+
+.timeline-team-icons.orange {
+	content: url('/assets/images/orange-team.png');
+}
+
+.timeline-team-icons.blue.first {
+	content: url('/assets/images/blue-team-1.png');
+}
+
+.timeline-team-icons.blue.second {
+	content: url('/assets/images/blue-team-2.png');
+}
+
+.timeline-team-icons.green {
+	content: url('/assets/images/green-team.png');
+}
+
+.timeline-team-icons.skyblue {
+	content: url('/assets/images/skyblue-team.png');
+}
+
+.additionalNote {
+	font-size: 11px;
+}
+
+span.team-gap-patch {
+    position: absolute;
+    height: 3px;
+    z-index: 10;
+    top: 40px;
+}
+
+span.team-gap-patch.blue {
+	background-color: #4667F6;
+}
+
+.gap-note {
+	font-size: 13px;
+    position: absolute;
+    left: 50px;
+    top: -17px;
+    color: #4667F6;
+}
+
+.timeline-team-title {
+	color: #9A9A9A;
+    text-transform: uppercase;
+    padding: 20px;
+}

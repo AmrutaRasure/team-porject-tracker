@@ -1,0 +1,59 @@
+.teams-wrapper {
+	width: 100%;
+	display: flex;
+}
+
+.team {
+	margin: 10px;
+	text-align: center;
+	background-color: #fff;
+	border:1px solid transparent;
+	border-radius: 3px;
+	padding: 20px 15px;
+	width: 20%;
+	cursor: pointer;
+}
+
+.team-name {
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-bottom: 10px;
+	font-weight: 600;
+}
+
+.selected-team .team-name {
+	color: #F25074;
+}
+
+.leader-title {
+	font-size: 13px;
+	color: gray;
+	padding-bottom: 10px;
+}
+
+.team-icon {
+	display: block;
+	height: 60px;
+	width: 65px;
+    margin: 0 auto;
+}
+
+.regular-red-head-male {
+	content: url('/assets/images/short-video-team.png'); 
+}
+
+.regular-black-skyblue-male {
+	content: url('/assets/images/mobile-page-team.png'); 
+}
+
+.regular-peach-black-male {
+	content: url('/assets/images/web-design-team.png'); 
+}
+
+.regular-yellow-black-male {
+	content: url('/assets/images/taxi-hailing-team.png'); 
+}
+
+.regular-peach-blonde-female {
+	content: url('/assets/images/illustrations-team.png'); 
+}

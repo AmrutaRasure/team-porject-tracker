@@ -1,0 +1,15 @@
+<section>
+	<app-left-main-menu></app-left-main-menu>
+</section>
+<section>
+	<app-left-skills-menu></app-left-skills-menu>
+</section>
+
+<div class="theme-selection-box">
+	<label class="switch">
+	  <input type="checkbox" [(ngModel)]="isSunTheme" (change)="updateThemeStatus()">
+	  <span class="slider round"></span>
+	</label>
+	<span class="theme" [ngClass]="[isSunTheme ? 'selected-theme' : '']">Sun</span>&nbsp;/&nbsp;
+	<span class="theme" [ngClass]="[!isSunTheme ? 'selected-theme' : '']">Moon</span>
+</div>

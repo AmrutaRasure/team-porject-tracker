@@ -1,0 +1,7 @@
+<div class="teams-wrapper">
+	<div *ngFor="let team of projectTeams" class="team" [ngClass]="[selectedTeam.title == team.title ? 'selected-team' : '']">
+		<p class="team-name">{{team.title}}</p>
+		<p class="leader-title">Leader</p>
+		<span class="team-icon" [ngClass]="team.iconName"></span>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+.body-wrapper {
+	height: auto;
+	width: 100%;
+    padding: 20px 0;
+}
+
+.sun-theme-bg {
+	background: url('/assets/images/sun-theme-2.png');
+	background-size: contain;
+}
+
+.moon-theme-bg {
+	background: url('/assets/images/moon-theme.png');
+	background-size: contain;
+}
+
+.main-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #EFEFEF;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.top-nav-wrapper {
+	width: 100%;
+    border-bottom: 1px solid #EFEFEF;
+    height: 55px;
+}
+
+.left-nav-wrapper {
+    width: 17.5%;
+    border-right: 1px solid #EFEFEF;
+    padding: 10px 20px;
+}
+
+.menu-route-page-wrapper {
+	display: flex;
+}
+
+.route-page-wrapper {
+	width: 80%;
+	padding: 20px;
+    background: #F7F6F9;
+    border-bottom-right-radius: 20px;
+}

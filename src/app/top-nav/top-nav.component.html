@@ -1,0 +1,18 @@
+<header>
+	<div class="top-nav-item first-menu">
+		<a href="" class="company-name">Radesign</a>
+	</div>
+	<div class="top-nav-item search-menu">
+		<span class="search-box-icon"></span>
+		<input type="text" name="search" placeholder="Search for members and works ... ...">
+	</div>
+	<div class="top-nav-item dropdrop-menu">
+		<button class="top-menu-btn notification" title="Notification"></button>
+	</div>
+	<div class="top-nav-item dropdrop-menu">
+		<button class="top-menu-btn setting" title="Account settings"></button>
+	</div>
+	<div class="top-nav-item last-menu">
+		<span [ngClass]="user.iconClass"></span><span class="user-name">{{user.userName}}</span>
+	</div>
+</header>

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jarvis-assignment';
+  isSun: boolean = true;
+
+
+
+	changeTheme(event) {
+		this.isSun = event;
+		//debugger;
+	}
 }
